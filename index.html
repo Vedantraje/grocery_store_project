@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/bb674ddf93.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script>
+
+    function color() {
+      document.getElementById("p1").style.color = "orange";
+      setTimeout(color1, 1000);
+    }
+    function color1() {
+      document.getElementById("p1").style.color = "white";
+      setTimeout(color, 1000);
+    }
+  </script>
+</head>
+
+<body onload="color()">
+  <div class="bg-dark text-white text-center">
+    <p><span id="p1">Free Shipping </span>orders from all item</p>
+  </div>
+
+  <!-- Navbar -->
+
+  <div class="container">
+    <div class="d-flex flex-row mb-3 justify-content-evenly align-items-center">
+      <div class="p-2 flex-grow-1"><a class="navbar-brand" href="#"><img src="images/logo-1.svg" width="100"></a></div>
+      <div class="p-2 flex-grow-1">
+        <form class="d-flex" role="search">
+          <input class="form-control rounded-pill" type="search" placeholder="Search our store" aria-label="Search">
+          <button class="btn btn-dark rounded-circle btnsearch" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+              width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg></button>
+        </form>
+      </div>
+
+      <!-- Account -->
+
+      <div class="p-2"> <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+            fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+            <path
+              d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+          </svg><span class="text-warning">Account</span>
+        </a></div>
+
+      <!-- Heart -->
+
+      <div class="p-2"><a class="nav-link" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-suit-heart"
+            viewBox="0 0 16 16">
+            <path
+              d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+          </svg><sup class="bg-warning text-white fs-4 rounded-circle">0</sup>
+        </a></div>
+
+      <!-- Bag/Chart -->
+
+      <div class="p-2"><a class="nav-link" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 16 16">
+            <path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
+          </svg><sup class="bg-warning text-white fs-4 rounded-circle">0</sup>
+    </a></div>
+      <div class="p-2">
+        <button class="btn btn-white sub" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-handbag" viewBox="0 0 16 16">
+            <path d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2zm3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6h4z"/>
+          </svg><sup class="bg-warning text-white fs-4 rounded-circle">0</sup>
+        </button>
+  
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Cart Items</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+    </div>
+    <div class="subtotal"></div>
+  </div>
+  </div>
+  </div><hr>
+
+    <!-- Dropdown lists navbar -->
+
+    <!-- Home -->
+
+    <div class="container">
+      <div class="d-flex flex-row justify-content-evenly">
+        <div class="p-2">
+          <div class="dropdown a1">
+            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu hide">
+              <li><a class="dropdown-item" href="#">Vegist Home 01</a></li>
+              <li><a class="dropdown-item" href="#">Vegist Home 02</a></li>
+              <li><a class="dropdown-item" href="#">Vegist Home 03</a></li>
+              <li><a class="dropdown-item" href="#">Vegist Home 04</a></li>
+              <li><a class="dropdown-item" href="#">Vegist Home 05</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Shop -->
+
+        <div class="p-2">
+          <div class="dropdown a1">
+            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Shop
+            </a>
+            <div class="hide">
+              <div class="d-flex flex-row mb-3 dropdown-menu">
+                <div class="p-2">
+                  <h6>Fresh Food</h6>
+                  <li><a class="dropdown-item" href="#">Fruit & nut</a></li>
+                  <li><a class="dropdown-item" href="#">Snack Foods</a></li>
+                  <li><a class="dropdown-item" href="#">Organic Nut Gifts</a></li>
+                  <li><a class="dropdown-item" href="#">Non-Dairy</a></li>
+                  <li><a class="dropdown-item" href="#">Blackberry Organic</a></li>
+                  <li><a class="dropdown-item" href="#">Fresh & Healthy Food</a></li>
+                </div>
+                <div class="p-2">
+                  <h6>Mixedfruits</h6>
+                  <li><a class="dropdown-item" href="#">Oranges</a></li>
+                  <li><a class="dropdown-item" href="#">Ghee Baverages</a></li>
+                  <li><a class="dropdown-item" href="#">Ranch Salad</a></li>
+                  <li><a class="dropdown-item" href="#">Fresh Avocado</a></li>
+                  <li><a class="dropdown-item" href="#">Fresh Blueberry</a></li>
+                  <li><a class="dropdown-item" href="#">Fresh Apple(5kg)</a></li>
+                </div>
+                <div class="p-2">
+                  <h6>Banana & Plantains</h6>
+                  <li><a class="dropdown-item" href="#">Fresh Gala</a></li>
+                  <li><a class="dropdown-item" href="#">Fifts mixed fruits</a></li>
+                  <li><a class="dropdown-item" href="#">Fresh Organic</a></li>
+                  <li><a class="dropdown-item" href="#">Vegetable Tomato</a></li>
+                  <li><a class="dropdown-item" href="#">Fresh Litchi 100% Organic</a></li>
+                  <li><a class="dropdown-item" href="#">Fresh Blueberry</a></li>
+                </div>
+                <div class="p-2">
+                  <h6>Apples berries</h6>
+                  <li><a class="dropdown-item" href="#">Pears Produce</a></li>
+                  <li><a class="dropdown-item" href="#">Fresh Green Orange</a></li>
+                  <li><a class="dropdown-item" href="#">Blackberry 100% Organic</a></li>
+                  <li><a class="dropdown-item" href="#">Fresh Grassben</a></li>
+                  <li><a class="dropdown-item" href="#">Deli Roll Cake</a></li>
+                  <li><a class="dropdown-item" href="#">Fresh Grassben</a></li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Collection -->
+
+        <div class="p-2">
+          <div class="dropdown a1">
+            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Collection
+            </a>
+            <ul class="dropdown-menu hide">
+              <div class="d-flex flex-row">
+
+                <div class="p-2">
+                  <figure class="figure">
+                    <img src="./images/drop1.jpg" width="300vw" alt="...">
+                    <figcaption class="figure-caption text-center"><br><b><a href="1">Bestseller</a></b></figcaption>
+                  </figure>
+                </div>
+
+                <div class="p-2">
+                  <figure class="figure">
+                    <img src="./images/drop2.jpg" width="300vw" alt="...">
+                    <figcaption class="figure-caption text-center"><br><b><a href="1">Special Product</a></b>
+                    </figcaption>
+                  </figure>
+                </div>
+                <div class="p-2">
+                  <figure class="figure">
+                    <img src="./images/drop3.jpg" width="300vw" alt="...">
+                    <figcaption class="figure-caption text-center"><br><b> <a href="1">Feature Product</a></b>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pages -->
+
+        <div class="p-2">
+          <div class="dropdown a1">
+            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu hide">
+              <li><a class="dropdown-item" href="#">About Us</a></li>
+              <li><a class="dropdown-item" href="#">FAQ's</a></li>
+              <li><a class="dropdown-item" href="#">Payment Policy</a></li>
+              <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+              <li><a class="dropdown-item" href="#">Contact us</a></li>
+              <li><a class="dropdown-item" href="#">Return Policy</a></li>
+              <li><a class="dropdown-item" href="#">Terms & Conditions</a></li>
+              <li><a class="dropdown-item" href="#">Page 404</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Blogs -->
+
+        <div class="p-2">
+          <div class="dropdown a1">
+            <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Blogs
+            </a>
+            <ul class="dropdown-menu hide">
+              <li><a class="dropdown-item" href="#">Blog two grid</a></li>
+              <li><a class="dropdown-item" href="#">Blog three grid</a></li>
+              <li><a class="dropdown-item" href="#">Blog left sidebar</a></li>
+              <li><a class="dropdown-item" href="#">Blog right sidebar</a></li>
+              <li><a class="dropdown-item" href="#">Blockquote Post</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Buy Vegist -->
+
+        <div class="p-2 flex-grow-1"><a href="#">Buy Vegist</a><sup class="bg-danger text-white">Hot</sup></div>
+        <div class="p-1"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+              class="bi bi-headset" viewBox="0 0 16 16">
+              <path
+                d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z" />
+            </svg>
+            <span class="text-warning fs-5">Hotline:<br>
+              <p class="text-dark fs-6 ms-4 lh-1">0123 456 789</p>
+            </span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Courosel -->
+
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="position-relative">
+          <img src="images/slider1.webp" class="d-block w-100" alt="...">
+
+          <div class="position-absolute top-50 start-0">
+            <h4 class="mb-4">Summer Vege Sale</h4>
+            <h1 class="mb-4">Fresh Fruits & Vegetable</h1>
+            <button type="button" class="btn btn-warning">Shop Now</button>
+          </div>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="position-relative">
+          <img src="images/slider2.webp" class="d-block w-100" alt="...">
+
+          <div class="position-absolute top-50 end-0">
+            <h4 class="mb-4">Organic Indian Masal</h4>
+            <h1 class="mb-4">Prod of Indian 100% Packaging</h1>
+            <button type="button" class="btn btn-warning">Shop Now</button>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="carousel-item">
+        <div class="position-relative">
+          <img src="images/slider3.webp" class="d-block w-100" alt="...">
+
+          <div class="position-absolute top-50 start-50 translate-middle">
+            <h4 class="mb-4">Top Selling</h4>
+            <h1 class="mb-4">Fresh for your health</h1>
+            <button type="button" class="btn btn-warning">Shop Now</button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Fruits & Vegetables -->
+
+  <div class="d-flex flex-row mt-5 mb-3 justify-content-evenly">
+    <div class="position-relative p-2">
+      <img src="./images/product1.webp" class="producthov d-block img-fluid" alt="...">
+
+      <div class="p-3 position-absolute top-50 start-0 img-fluid">
+        <h3 class="mb-4">Fresh fruit,vegetable on <br> our product</h3>
+        <button type="button" class=" btn btn-warning">Shop Now</button>
+      </div>
+    </div>
+
+
+    <div class="position-relative p-2">
+      <img src="./images/product2.webp" class="producthov d-block img-fluid" alt="...">
+
+      <div class="p-3 position-absolute top-50 start-0 img-fluid">
+        <h3 class="mb-4">Vegetable eggplant<br>100% fresh food</h3>
+        <button type="button" class="btn btn-warning">Shop Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Shop by category -->
+
+  <div style="background-color: rgb(224, 224, 224);">
+    <h3 class="text-center mt-5 p-2">Shop By Category</h3>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex flex-row justify-content-evenly align-items-center">
+            <div class="position-relative img1">
+              <img src="images/cat2_150x150_crop_center.jpg" class="d-block" alt="...">
+              <div class="position-absolute top-50 start-50 translate-middle hide">
+                <h6>Fresh Fruit</h6>
+              </div>
+              <p class="text-center">22 Items</p>
+            </div>
+            <div>
+              <img src="./images/cat1_150x150_crop_center.jpg" class="d-block" alt="...">
+              <p class="text-center">22 Items</p>
+            </div>
+            <div>
+              <img src="images/cat4_150x150_crop_center.jpg" class="d-block" alt="...">
+              <p class="text-center">22 Items</p>
+            </div>
+            <div>
+              <img src="images/cat5_150x150_crop_center.jpg" class="d-block" alt="...">
+              <p class="text-center">22 Items</p>
+            </div>
+            <div>
+              <img src="images/cat6_150x150_crop_center.jpg" class="d-block" alt="...">
+              <p class="text-center">22 Items</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex flex-row justify-content-evenly align-items-center">
+            <div>
+              <img src="images/cat7_150x150_crop_center.jpg" class="d-block" alt="...">
+              <p class="text-center">22 Items</p>
+            </div>
+            <div>
+              <img src="images/cat8_150x150_crop_center.jpg" class="d-block" alt="...">
+              <p class="text-center">22 Items</p>
+            </div>
+            <div>
+              <img src="images/cat9_150x150_crop_center.jpg" class="d-block" alt="...">
+              <p class="text-center">22 Items</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Trending Products -->
+
+  <div class="container">
+    <div id="carouselExampleAutoplaying1" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex flex-row m-3 justify-content-evenly align-items-center">
+            <div class="p-2">
+              <div class="position-relative img1">
+                <img src="images/20_390X468_crop_center.jpg" class="d-block h-75 w-100" alt="...">
+                <div class="position-absolute start-50 bottom-0 translate-middle hide">
+                  <div class="d-flex">
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-suit-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                      </svg></div>
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-handbag-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M8 1a2 2 0 0 0-2 2v2H5V3a3 3 0 1 1 6 0v2h-1V3a2 2 0 0 0-2-2zM5 5H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11v1.5a.5.5 0 0 1-1 0V5H6v1.5a.5.5 0 0 1-1 0V5z" />
+                      </svg></div>
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-eye-fill" viewBox="0 0 16 16">
+                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                        <path
+                          d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                      </svg></div>
+                  </div>
+                </div>
+              </div>
+              <p>Vegetable Tomato</p>
+              <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+              <h6>₹ 55.00</h6>
+            </div>
+            <div class="p-2">
+              <div class="position-relative img1">
+                <img src="images/30_390X468_crop_center.jpg" class="d-block h-75 w-100" alt="...">
+                <div class="position-absolute start-50 bottom-0 translate-middle hide">
+                  <div class="d-flex">
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-suit-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                      </svg></div>
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-handbag-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M8 1a2 2 0 0 0-2 2v2H5V3a3 3 0 1 1 6 0v2h-1V3a2 2 0 0 0-2-2zM5 5H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11v1.5a.5.5 0 0 1-1 0V5H6v1.5a.5.5 0 0 1-1 0V5z" />
+                      </svg></div>
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-eye-fill" viewBox="0 0 16 16">
+                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                        <path
+                          d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                      </svg></div>
+                  </div>
+                </div>
+              </div>
+              <p>Sp. Red Fresh Guava</p>
+              <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+              <h6>₹ 30.00</h6>
+            </div>
+            <div class="p-2">
+              <div class="position-relative img1">
+                <img src="images/36_1_390X468_crop_center.jpg" class="d-block h-75 w-100" alt="...">
+                <div class="position-absolute start-50 bottom-0 translate-middle hide">
+                  <div class="d-flex">
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-suit-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                      </svg></div>
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-handbag-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M8 1a2 2 0 0 0-2 2v2H5V3a3 3 0 1 1 6 0v2h-1V3a2 2 0 0 0-2-2zM5 5H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11v1.5a.5.5 0 0 1-1 0V5H6v1.5a.5.5 0 0 1-1 0V5z" />
+                      </svg></div>
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-eye-fill" viewBox="0 0 16 16">
+                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                        <path
+                          d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                      </svg></div>
+                  </div>
+                </div>
+              </div>
+              <p>Shrimp jumbo (5lb)</p>
+              <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                class="fa-solid fa-star text-warning"></i><i class="fa-regular fa-star"></i><i
+                class="fa-regular fa-star"></i>
+              <h6>₹ 61.00</h6>
+            </div>
+            <div class="p-2">
+              <div class="position-relative img1">
+                <img src="images/2_390X468_crop_center.jpg" class="d-block h-75 w-100" alt="...">
+                <div class="position-absolute start-50 bottom-0 translate-middle hide">
+                  <div class="d-flex">
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-suit-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                      </svg></div>
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-handbag-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M8 1a2 2 0 0 0-2 2v2H5V3a3 3 0 1 1 6 0v2h-1V3a2 2 0 0 0-2-2zM5 5H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11v1.5a.5.5 0 0 1-1 0V5H6v1.5a.5.5 0 0 1-1 0V5z" />
+                      </svg></div>
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-eye-fill" viewBox="0 0 16 16">
+                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                        <path
+                          d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                      </svg></div>
+                  </div>
+                </div>
+              </div>
+              <p>Organic Coconut</p>
+              <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                class="fa-regular fa-star text-warning"></i><i class="fa-regular fa-star"></i><i
+                class="fa-regular fa-star"></i>
+              <h6>₹ 35.00</h6>
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex flex-row m-3 justify-content-evenly align-items-center">
+            <div class="p-2">
+              <div class="position-relative img1">
+                <img src="images/49_390X468_crop_center.jpg" class="d-block h-75 w-100" alt="...">
+                <div class="position-absolute start-50 bottom-0 translate-middle hide">
+                  <div class="d-flex">
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-suit-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                      </svg></div>
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-handbag-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M8 1a2 2 0 0 0-2 2v2H5V3a3 3 0 1 1 6 0v2h-1V3a2 2 0 0 0-2-2zM5 5H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11v1.5a.5.5 0 0 1-1 0V5H6v1.5a.5.5 0 0 1-1 0V5z" />
+                      </svg></div>
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-eye-fill" viewBox="0 0 16 16">
+                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                        <path
+                          d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                      </svg></div>
+                  </div>
+                </div>
+              </div>
+              <p>Orange Juice(5ltr)</p>
+              <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+              <h6>₹ 66.00</h6>
+            </div>
+            <div class="p-2">
+              <div class="position-relative img1">
+                <img src="images/27_390X468_crop_center.jpg" class="d-block h-75 w-100" alt="...">
+                <div class="position-absolute start-50 bottom-0 translate-middle hide">
+                  <div class="d-flex">
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-suit-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                      </svg></div>
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-handbag-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M8 1a2 2 0 0 0-2 2v2H5V3a3 3 0 1 1 6 0v2h-1V3a2 2 0 0 0-2-2zM5 5H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11v1.5a.5.5 0 0 1-1 0V5H6v1.5a.5.5 0 0 1-1 0V5z" />
+                      </svg></div>
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-eye-fill" viewBox="0 0 16 16">
+                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                        <path
+                          d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                      </svg></div>
+                  </div>
+                </div>
+              </div>
+              <p>Healthy Papaya 100% Organic</p>
+              <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+              <h6>₹ 20.00</h6>
+            </div>
+            <div class="p-2">
+              <div class="position-relative img1">
+                <img src="images/14_390X468_crop_center.jpg" class="d-block h-75 w-100" alt="...">
+                <div class="position-absolute start-50 bottom-0 translate-middle hide">
+                  <div class="d-flex">
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-suit-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                      </svg></div>
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-handbag-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M8 1a2 2 0 0 0-2 2v2H5V3a3 3 0 1 1 6 0v2h-1V3a2 2 0 0 0-2-2zM5 5H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11v1.5a.5.5 0 0 1-1 0V5H6v1.5a.5.5 0 0 1-1 0V5z" />
+                      </svg></div>
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-eye-fill" viewBox="0 0 16 16">
+                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                        <path
+                          d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                      </svg></div>
+                  </div>
+                </div>
+              </div>
+              <p>Fruits Banana 100% Organic</p>
+              <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                class="fa-solid fa-star text-warning"></i><i class="fa-regular fa-star"></i><i
+                class="fa-regular fa-star"></i>
+              <h6>₹ 22.00 <span class="text-decoration-line-through">₹ 44.00</span></h6>
+            </div>
+            <div class="p-2">
+              <div class="position-relative img1">
+                <img src="images/44_390X468_crop_center.jpg" class="d-block h-75 w-100" alt="...">
+                <div class="position-absolute start-50 bottom-0 translate-middle hide">
+                  <div class="d-flex">
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-suit-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                      </svg></div>
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-handbag-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M8 1a2 2 0 0 0-2 2v2H5V3a3 3 0 1 1 6 0v2h-1V3a2 2 0 0 0-2-2zM5 5H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11v1.5a.5.5 0 0 1-1 0V5H6v1.5a.5.5 0 0 1-1 0V5z" />
+                      </svg></div>
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-eye-fill" viewBox="0 0 16 16">
+                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                        <path
+                          d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                      </svg></div>
+                  </div>
+                </div>
+              </div>
+              <p>Fresh Seafood</p>
+              <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                class="fa-regular fa-star text-warning"></i><i class="fa-regular fa-star"></i><i
+                class="fa-regular fa-star"></i>
+              <h6>₹ 18.00 <span class="text-decoration-line-through">₹ 44.00</span></h6>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex flex-row mb-3 justify-content-evenly align-items-center">
+            <div class="p-2">
+              <div class="position-relative img1">
+                <img src="images/16_390X468_crop_center.jpg" class="d-block h-75 w-100" alt="...">
+                <div class="position-absolute start-50 bottom-0 translate-middle hide">
+                  <div class="d-flex">
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-suit-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                      </svg></div>
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-handbag-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M8 1a2 2 0 0 0-2 2v2H5V3a3 3 0 1 1 6 0v2h-1V3a2 2 0 0 0-2-2zM5 5H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11v1.5a.5.5 0 0 1-1 0V5H6v1.5a.5.5 0 0 1-1 0V5z" />
+                      </svg></div>
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-eye-fill" viewBox="0 0 16 16">
+                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                        <path
+                          d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                      </svg></div>
+                  </div>
+                </div>
+              </div>
+              <p>Fresh Organic Reachter</p>
+              <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+              <h6>₹ 44.00 <span class="text-decoration-line-through">₹ 65.00</span></h6>
+            </div>
+            <div class="p-2">
+              <div class="position-relative img1">
+                <img src="images/29_390X468_crop_center.jpg" class="d-block h-75 w-100" alt="...">
+                <div class="position-absolute start-50 bottom-0 translate-middle hide">
+                  <div class="d-flex">
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-suit-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                      </svg></div>
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-handbag-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M8 1a2 2 0 0 0-2 2v2H5V3a3 3 0 1 1 6 0v2h-1V3a2 2 0 0 0-2-2zM5 5H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11v1.5a.5.5 0 0 1-1 0V5H6v1.5a.5.5 0 0 1-1 0V5z" />
+                      </svg></div>
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-eye-fill" viewBox="0 0 16 16">
+                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                        <path
+                          d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                      </svg></div>
+                  </div>
+                </div>
+              </div>
+              <p>Fresh Organic Food (50gm)</p>
+              <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+              <h6>₹ 33.00</h6>
+            </div>
+            <div class="p-2">
+              <div class="position-relative img1">
+                <img src="images/36_1_390X468_crop_center.jpg" class="d-block h-75 w-100" alt="...">
+                <div class="position-absolute start-50 bottom-0 translate-middle hide">
+                  <div class="d-flex">
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-suit-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                      </svg></div>
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-handbag-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M8 1a2 2 0 0 0-2 2v2H5V3a3 3 0 1 1 6 0v2h-1V3a2 2 0 0 0-2-2zM5 5H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11v1.5a.5.5 0 0 1-1 0V5H6v1.5a.5.5 0 0 1-1 0V5z" />
+                      </svg></div>
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-eye-fill" viewBox="0 0 16 16">
+                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                        <path
+                          d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                      </svg></div>
+                  </div>
+                </div>
+              </div>
+              <p>Shrimp jumbo (5lb)</p>
+              <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                class="fa-solid fa-star text-warning"></i><i class="fa-regular fa-star"></i><i
+                class="fa-regular fa-star"></i>
+              <h6>₹ 61.00</h6>
+            </div>
+            <div class="p-2">
+              <div class="position-relative img1">
+                <img src="images/2_390X468_crop_center.jpg" class="d-block h-75 w-100" alt="...">
+                <div class="position-absolute start-50 bottom-0 translate-middle hide">
+                  <div class="d-flex">
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-suit-heart" viewBox="0 0 16 16">
+                        <path
+                          d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                      </svg></div>
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-handbag-fill" viewBox="0 0 16 16">
+                        <path
+                          d="M8 1a2 2 0 0 0-2 2v2H5V3a3 3 0 1 1 6 0v2h-1V3a2 2 0 0 0-2-2zM5 5H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11v1.5a.5.5 0 0 1-1 0V5H6v1.5a.5.5 0 0 1-1 0V5z" />
+                      </svg></div>
+                    <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-eye-fill" viewBox="0 0 16 16">
+                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                        <path
+                          d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                      </svg></div>
+                  </div>
+                </div>
+              </div>
+              <p>Organic Coconut</p>
+              <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                class="fa-regular fa-star text-warning"></i><i class="fa-regular fa-star"></i><i
+                class="fa-regular fa-star"></i>
+              <h6>₹ 35.00</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying1"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying1"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Deal of the day -->
+
+  <div class="h-100 w-100 mt-4 deal">
+    <div class="h-50 w-50 p-4">
+      <h6 class="text-white text-center mt-5">We offer a hot deal offer every festival</h6>
+      <h4 class="text-white text-center mt-2">Deal of the Day!</h4>
+      <div class="d-flex flex-row mb-3 justify-content-evenly align-items-center mt-3 p-4">
+        <div class="bg-warning text-white deal1 text-center">
+          <h2>685</h2>
+          <p>DAY</p>
+        </div>
+        <div class="bg-warning text-white deal1 text-center">
+          <h2>7</h2>
+          <p>HRS</p>
+        </div>
+        <div class="bg-warning text-white deal1 text-center">
+          <h2>25</h2>
+          <p>MIN</p>
+        </div>
+        <div class="bg-warning text-white deal1 text-center">
+          <h2>1</h2>
+          <p>SEC</p>
+        </div>
+      </div>
+      <button type="button" class="btn btn-warning rounded-pill mx-auto d-block text-white mt-4">Shop
+        Collection</button>
+    </div>
+  </div>
+
+  <!-- Our Product -->
+
+  <div class="container">
+    <h3 class="text-center m-3">Our Products</h3>
+
+    <div class="d-flex flex-row mb-3 justify-content-center align-item-center mt-3">
+      <div class="p-2"><button type="button" class=" btn btn-dark rounded-pill">Special Product</button></div>
+      <div class="p-2"><button type="button" class="btn btn-dark rounded-pill">New Product</button></div>
+      <div class="p-2"><button type="button" class="btn btn-dark rounded-pill">Best Seller</button></div>
+    </div>
+
+  </div>
+
+  <!-- Products -->
+
+  <div class="row row-cols-6 row-cols-md-4 g-4 elements">
+    <!-- <div class="col">
+    <div class="p-2">
+      <div class="position-relative img1">
+        <img src="images/1.jpg.jpg" class="d-block h-75 w-100" alt="...">
+        <div class="position-absolute start-50 bottom-0 translate-middle hide">
+          <div class="d-flex">
+            <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-suit-heart" viewBox="0 0 16 16">
+                <path
+                  d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+              </svg></div>
+            <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-handbag-fill" viewBox="0 0 16 16">
+                <path
+                  d="M8 1a2 2 0 0 0-2 2v2H5V3a3 3 0 1 1 6 0v2h-1V3a2 2 0 0 0-2-2zM5 5H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11v1.5a.5.5 0 0 1-1 0V5H6v1.5a.5.5 0 0 1-1 0V5z" />
+              </svg></div>
+            <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-eye-fill" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                <path
+                  d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+              </svg></div>
+          </div>
+        </div>
+      </div>
+      <p>Vegetable Tomato</p>
+      <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+      <h6>₹ 55.00</h6>
+    </div> 
+  </div> -->
+
+
+    <!-- <div class="col">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div> 
+  </div>-->
+  </div>
+
+  <!--Our customer say  -->
+
+  <div class="container mt-4 mb-4">
+    <h3 class="text-center mt-5 mb-4">Our Customer Say</h3>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active text-center">
+          <div class="row">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="card">
+                <div class="card-body">
+                  <div class="quotes bg-warning text-white mx-auto d-block p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                      class="bi bi-quote" viewBox="0 0 16 16">
+                      <path
+                        d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z" />
+                    </svg>
+                  </div>
+                  <h5 class="card-title mt-4">"For Customer Support"</h5>
+                  <p class="card-text">The theme is very clean. I want to say that the support is extremely responsive
+                    and has been very patient with me. Thank you so much for your help!</p>
+                  <h6>By Tokenfaith</h6>
+                  <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                    class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                    class="fa-solid fa-star text-warning"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <div class="quotes bg-warning text-white mx-auto d-block p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                      class="bi bi-quote" viewBox="0 0 16 16">
+                      <path
+                        d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z" />
+                    </svg>
+                  </div>
+                  <h5 class="card-title mt-4">"For Customer Support"</h5>
+                  <p class="card-text">We needed a number of adjustments and changes before sending the site from
+                    draft/staging to a live site. Support was quick to make the necessary adjustments and changes.</p>
+                  <h6>By Refine_Digital</h6>
+                  <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                    class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item text-center">
+          <div class="row">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="card">
+                <div class="card-body">
+                  <div class="quotes bg-warning text-white mx-auto d-block p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                      class="bi bi-quote" viewBox="0 0 16 16">
+                      <path
+                        d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z" />
+                    </svg>
+                  </div>
+                  <h5 class="card-title mt-4">"For Other"</h5>
+                  <p class="card-text">The developer is awesome at jumping on and fixing things or making changes for
+                    me. The design is great and can be adjusted easily. I will difinitely stick to them when comes time
+                    for an upgrade.</p>
+                  <h6>By Stickersico</h6>
+                  <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                    class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                    class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <div class="quotes bg-warning text-white mx-auto d-block p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                      class="bi bi-quote" viewBox="0 0 16 16">
+                      <path
+                        d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z" />
+                    </svg>
+                  </div>
+                  <h5 class="card-title mt-4">"For Customer Support"</h5>
+                  <p class="card-text">Excellent customer support! I highly recommend this. I have been having many
+                    trubles making the product page look exactly as I want. The customer support was very responsive and
+                    efficient in solving my problems. Thank you very much!</p>
+                  <h6>By Clin1</h6>
+                  <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                    class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item text-center">
+          <div class="row">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="card">
+                <div class="card-body">
+                  <div class="quotes bg-warning text-white mx-auto d-block p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                      class="bi bi-quote" viewBox="0 0 16 16">
+                      <path
+                        d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z" />
+                    </svg>
+                  </div>
+                  <h5 class="card-title mt-4">"Flexibility"</h5>
+                  <p class="card-text">I love this theme. Highly customizable, easy to use and very flexible theme.
+                    Great support! Excellent response times. Very professional and helpful in all queries, absolutely
+                    awesome. Highly recommanded, the theme is really amazing. Thank you spacingtech webify.</p>
+                  <h6>By Disarak</h6>
+                  <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                    class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                    class="fa-solid fa-star text-warning"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <div class="quotes bg-warning text-white mx-auto d-block p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                      class="bi bi-quote" viewBox="0 0 16 16">
+                      <path
+                        d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z" />
+                    </svg>
+                  </div>
+                  <h5 class="card-title mt-4">"Customer Support"</h5>
+                  <p class="card-text">The design is very good and site is very responsive. However what compelled me to
+                    write this is the customer support that I have got. Prompt support from the developer. Would
+                    recommend it highly.</p>
+                  <h6>By Cremica_Foods</h6>
+                  <i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i
+                    class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Green Caurosel -->
+
+  <div class="container">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex flex-row mb-3 justify-content-evenly">
+            <div class="p-2"><img src="./images/l1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="p-2"><img src="./images/l6.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="p-2"><img src="./images/l3.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="p-2"><img src="./images/l4.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex flex-row mb-3 justify-content-evenly">
+            <div class="p-2"><img src="./images/l5.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="p-2"><img src="./images/l6.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="p-2"><img src="./images/l7.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="p-2"><img src="./images/l8.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Facilities -->
+
+  <div class="container mt-5 mb-3">
+    <div class="d-flex flex-row mb-3 justify-content-evenly align-items-center">
+      <div class="d-flex align-items-center">
+        <div class="p-2 features"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+            class="bi bi-truck mt-3" viewBox="0 0 16 16">
+            <path
+              d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+          </svg> </div>
+        <p class="ms-3">Free Delivery</p>
+      </div>
+
+      <div class="d-flex align-items-center">
+        <div class="p-2 features"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+            class="bi bi-cash mt-3" viewBox="0 0 16 16">
+            <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+            <path
+              d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z" />
+          </svg> </div>
+        <p class="ms-3">Cash on Delivery</p>
+      </div>
+
+      <div class="d-flex align-items-center">
+        <div class="p-2 features"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+            class="bi bi-arrow-repeat mt-3" viewBox="0 0 16 16">
+            <path
+              d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+            <path fill-rule="evenodd"
+              d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+          </svg> </div>
+        <p class="ms-3">30 days returns</p>
+      </div>
+
+      <div class="d-flex align-items-center">
+        <div class="p-2 features"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+            class="bi bi-headphones mt-3" viewBox="0 0 16 16">
+            <path
+              d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5z" />
+          </svg> </div>
+        <p class="ms-3">Online Support</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+
+  <!-- footer 1 -->
+
+  <div class="d-flex flex-row justify-content-evenly mb-3">
+    <div class="p-2"><img src="images/logo-1.svg" width="100" alt="">
+      <p>Lorem ipsum iasds simply dummy text of the printing <br> and typesetting industry. Lorem Ipsum has been the
+        <br> industry's standard dummy text ever since the
+      </p>
+    </div>
+    <div class="p-2">
+      <div><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+          class="bi bi-geo-alt-fill text-warning" viewBox="0 0 16 16">
+          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+        </svg>
+        <h2 class="text-warning">Address</h2>
+      </div>
+      <p>38 block street arean licard <br>
+        hamonia road sydney, australia</p>
+    </div>
+    <div class="p-2">
+      <div class="p-2">
+        <div><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+            class="bi bi-telephone-fill text-warning" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+          </svg>
+          <h4 class="text-warning">Get in touch</h4>
+        </div>
+        <p>(+800) 1234 5678 90 <br>
+          support@demo.com</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+
+  <!-- Footer 2 -->
+
+  <div class="container">
+    <div class="d-flex flex-row  justify-content-evenly">
+      <div class="p-2">
+        <h4 class="text-warning mb-3">Top categories</h4>
+        <h6>Fruits</h6>
+        <hr>
+        <h6>Fast foods</h6>
+        <hr>
+        <h6>Vegetable</h6>
+        <hr>
+        <h6>Salads</h6>
+        <hr>
+        <h6>Bestseller</h6>
+      </div>
+
+      <div class="p-2">
+        <h4 class="text-warning mb-3">Services</h4>
+        <h6>About vegist</h6>
+        <hr>
+        <h6>Faq's</h6>
+        <hr>
+        <h6>Contact us</h6>
+        <hr>
+        <h6>News</h6>
+        <hr>
+        <h6>Store location</h6>
+      </div>
+
+      <div class="p-2">
+        <h4 class="text-warning mb-3">Privacy & terms</h4>
+        <h6>Payment policy</h6>
+        <hr>
+        <h6>Privacy policy</h6>
+        <hr>
+        <h6>Return policy</h6>
+        <hr>
+        <h6>Shipping policy</h6>
+        <hr>
+        <h6>Terms & conditions</h6>
+      </div>
+
+      <div class="p-2">
+        <h4 class="text-warning mb-3">My account</h4>
+        <h6>My account</h6>
+        <hr>
+        <h6>My cart</h6>
+        <hr>
+        <h6>Order history</h6>
+        <hr>
+        <h6>My wishlist</h6>
+        <hr>
+        <h6>My address</h6>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer 3 -->
+
+  <div class="d-flex flex-row mt-5 mb-2 bg-warning text-white justify-content-evenly">
+    <div class="p-2 flex-grow-1">
+      <p>Copyright @2023 spacingtech all rights reserved</p>
+    </div>
+    <div class="p-2"><a href="http://www.whatsapp.com"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+          fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+          <path
+            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+        </svg></a> <a href="http://www.facebook.com""><svg xmlns=" http://www.w3.org/2000/svg" width="25" height="25"
+        fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+        <path
+          d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+        </svg>
+      </a> <a href="http://www.instagram.com""><svg xmlns=" http://www.w3.org/2000/svg" width="25" height="25"
+        fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+        <path
+          d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+        </svg>
+      </a> <a href="http://www.twitter.com""><svg xmlns=" http://www.w3.org/2000/svg" width="25" height="25"
+        fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+        <path
+          d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+        </svg>
+      </a> <a href="http://www.yputub.com""><svg xmlns=" http://www.w3.org/2000/svg" width="25" height="25"
+        fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+        <path
+          d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+        </svg>
+      </a> </div>
+    <div class="p-2 justify-content-end"><a href=""><img src="./images/cards.png" class="w-50" alt=""></a></div>
+  </div>
+</body>
+
+</html>
+<script src="index.js"></script>
